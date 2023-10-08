@@ -4,42 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./style.css" />
   </head>
+  <link rel="stylesheet" href="./style.css" />
   <script src="./sandbox.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <body>
-    <div class="container my-5 mx-auto">
-      <h1 class="text-muted text-center my-4">Weather Ninja</h1>
-
-      <form class="change-location my-4 text-center text-muted">
-        <label for="city">Enter a location for weather information</label>
-        <input type="text" name="city" class="form-control p-4"/>
-      </form>
-
-      <div class="card shadow-lg rounded">
-        <img
-          src="https://via.placeholder.com/400x300"
-          class="time card-img-top"
-        />
-        <div class="icon bg-light mx-auto text-center">
-          <!-- icon here later -->
-        </div>
-        <div class="text-muted text-uppercase text-center details">
-          <h5 class="my-3">City name</h5>
-
-          <div class="my-3">Weather condition</div>
-
-          <div class="display-4 my-4">
-            <span>temp</span>
-            <span>&deg;C</span>
-          </div>
-        </div>
+    <div class="calculator relative">
+      <div
+        id="indicaitor"
+        class="bg-gray-300 w-20 h-14 top-2 rounded-md left-2 absolute"
+      ></div>
+      <input type="text" id="display" class="display w-full" />
+      <div id="buttons" class="buttons">
+        <button class="number-button">7</button>
+        <button class="number-button">8</button>
+        <button class="number-button">9</button>
+        <button class="operator-button">/</button>
+        <button class="number-button">4</button>
+        <button class="number-button">5</button>
+        <button class="number-button">6</button>
+        <button class="operator-button">*</button>
+        <button class="number-button">1</button>
+        <button class="number-button">2</button>
+        <button class="number-button">3</button>
+        <button class="operator-button">-</button>
+        <button class="number-button">0</button>
+        <button class="number-button">.</button>
+        <button class="clear-button">C</button>
+        <button class="operator-button">+</button>
+        <button class="equals-button">=</button>
       </div>
     </div>
   </body>
